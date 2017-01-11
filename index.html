@@ -1,0 +1,89 @@
+
+<html> 
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		<title>Mrs. Petty </title>
+		<script>
+			function banner (){
+				var text= confirm("Are you sure you want to leave?");
+				return text;
+			}
+			function answer(){
+				var radio=document.getElementsByName("trivia");
+				var selection=false;
+				var message="";
+				
+				for( var i=0; i<radio.length; i++){
+					if(radio[i].value == "RAMRIGHT" && radio[i].checked == true) {
+						selection=true;
+					} //end if statement
+				} //end for loop
+				
+				if(selection==true) {
+					message = message + "<b><p style='color:green'>Way to go!</p></b>";
+				} 
+				else {
+					message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+				}
+					document.getElementById("response").innerHTML = message;
+			} //end function answer
+		</script>
+	</head> 
+	<body id="bodyid"> 
+		<a href="http://www.uen.org" onclick="return banner()">
+			<header id="header">Click here for resources
+			</header>
+		</a>
+		<nav>
+			<ul id="navmenu">
+				<li class="navitem"><a href="index.html">Home</a></li>
+				<li class="navitem"><a href="about.html">About Me</a></li>
+				<li class="navitem"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="rightside">
+			<div class="wrap-trivia">
+			<h2>Computer Trivia Question</h2>
+			<p>What does RAM stand for?</p>
+			<form>
+				<div id="response">
+				</div>
+				<input type="radio" name="trivia" value="RAMWRONG">Read Access Memory<br>
+				<input type="radio" name="trivia" value="RAMWRONG2">Radio Archive Memory<br>
+				<input type="radio" name="trivia" value="RAMRIGHT">Random Access Memory<br>
+				<input type="radio" name="trivia" value="RAMWRONG3">Read Access Memory<br>
+				<input type="button" value="Click Here" id="button" onclick="answer()">
+			</form>
+				<div id="imgnetwork">
+					<img src="networking.jpg" />
+				</div>
+				<div id="imgcert">
+					<img src="certification.jpg" />
+				</div>
+			</div>
+		</div>
+		<div id="leftside">
+			</div>
+			<h1> CTE Teacher </h1>
+			<p class="paragraphtag">I <b>love</b> technology! Like really really love! I teach CTE at Hawthorn Academy and love it! I am <u>excited</u> to teach students <i>HTML and Javascript.</i> I love to travel. I have been married 9 years, we have two dogs and a 6 month old son. <span class="wrap-text">I have been teaching at Hawthorn Academy for 2 years</span>.
+			</p>
+			<div class="wrap-list">
+				<ol>
+					<li class="listitem">I teach Computer Technology </li>
+					<li class="listitem">I am certified to teach A+ Repair </li>
+					<li class="listitem">I am getting endorsed to teach multimedia and networking </li>
+				</ol>
+			</div>
+		</div>
+		<div id="media">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JSnB06um5r4" frameborder="0" allowfullscreen></iframe>
+			<audio width="400" height="220" controls autoplay>
+				<source src="Lone_Harvest.mp3" type="audio/mpeg">
+					Your browser does not support HTML 5 audio.
+			</audio>
+		</div>
+		<hr>
+		<center>Karin Petty | <a href="https://sites.google.com/site/mrspettyscomputertech/">My Favorite Website</a> </center>
+		<footer>Created by Karin Petty </footer>
+	</body> 
+</html>

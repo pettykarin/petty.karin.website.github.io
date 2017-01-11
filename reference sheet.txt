@@ -1,0 +1,124 @@
+CSS Reference Sheet
+
+CSS Property Value Pairs
+
+Below is a table of some useful css properties with possible values. Use this as a reference throughout the course to help you style your web pages. For a more complete reference sheet Click Here.
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/> - Links your html page to your css file
+
+p {
+ color:blue; - Proper CSS Syntax
+ }
+
+Remember in the example above 'color' is the property and 'blue' is the value.
+
+To comment out CSS code use /* ... */, see below.
+
+/* p{
+ color:blue;
+ } */
+
+
+Property
+
+Possible Value(s)
+
+Description
+
+
+Text Manipulation and Styling Properties
+
+font-size: 20px;
+ 2em;
+ 80%;
+ px means pixels.
+ em is based off default size. 2em is twice as large as default.
+ % - 100% equals 12 point font, other %'s are based off that.
+ 
+font-family: arial;
+ 'Times New Roman;'
+ many others  There a lots of fonts to choose from.
+click here for many web safe fonts to use.  
+color: blue;
+ #0000FF;
+ rgb(0,0,255);  All of those will display blue text.  
+text-align: center;
+ left;
+ right;  Aligns text directionally. 
+text-decoration: none;
+ underline;
+ overline;
+ line-through;
+ Commonly used to remove underline from links. 
+font-weight: bold;
+ normal;
+ 900; Makes text bold, removes bold or number value to how bold you want it. 
+list-style-type: none;
+ square;
+ circle;
+ lots of them Specifies the type of list-item marker in a list. Click here for others 
+line-height: 2em;
+ also px & %. Vertically aligns the text 
+
+Block Manipulation and Styling Properties
+
+background-color: blue;
+ #0000FF;
+ rgb(0,0,255);  Fills shape with specified color. 
+height: 300px; Defines the height of the shape. Use px, % or em. 
+width: 300px; Defines the width of the shape. Use px, % or em. 
+border: 2px solid black; This is the short hand way of setting a border. To do each value individually do:
+ border-color:black;
+ border-style:solid;
+ border-width:2px; 
+border-style: solid;
+ dotted;
+ dashed;
+ double;
+ groove;
+ ridge;  Defines how the border style will be displayed 
+position: absolute;
+ fixed;
+ relative;
+ absolute - Stays in its place regardless of other elements.
+fixed - Element will be positioned in relation to the browser window (it moves with a scrolling window).
+relative - Element is positioned relative to itself. It can easily be manipulated by adding directional properties, ie top:25px; will add 25px above the element.  
+display block;
+ inline;
+ inline-block;
+ none;  block - Won't allow other elements to be next to it, but you may set its own height, width, margins etc.
+inline - Elements can sit next to it, but you can't set its own height, width, margins etc. Takes shape of it's HTML content.
+inline-block - Elements can sit next to it, and you can set its own height, width, margins etc.
+none - Element is not displayed, it disappears. 
+border-radius: 10px; Rounds the corners of a border. To make a circle, use 50% as the value. 
+margin:
+ auto;
+ 25px;
+ Margins are the space between the borders of two elements
+auto - Equal margins on all sides, used to center a block element.
+25px; - Margins of 25px applied to each side of the block.
+ 
+margin-top:
+ margin-right:
+ margin-bottom:
+ margin-left:  25px; Applies margin to the appropriate direction.
+ 
+padding: 25px; Padding is the space between the border and the content inside the block.
+ Properties & values are the same as margins except you cannot use negative values. 
+float: left;
+ right;
+ none;  Moves the block to appropriate position in its container, other elements will flow around it.  
+clear: left;
+ right;
+ both;  Clears the float, so elements will stop flowing around a floated block. 
+
+Link Manipulation and Styling Properties
+
+a:link{
+ color:  yellow; Changes the initial displayed link color. 
+a:visited{
+ color:  orange; Changes the link color once the link has been visited. 
+a:active{
+ color: pink; Changes the link color while being clicked on. 
+a:hover{
+ color: white; Changes the link color while hovering your mouse over it. 
